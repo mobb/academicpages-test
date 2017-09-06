@@ -8,17 +8,18 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page ("about"), that is being served from the docs dir of a github project. 
-so the git path is https://[acct].github.com/[project]/docs
+This is the front page ("about"). It is served from the master dir of a github project. 
+so the git path is https://[acct].github.com/[project]
 and this page's url is  https://[acct].github.io/[project]
 
 created by copying the template for academic pages, here:  [academicpages template](https://github.com/academicpages/academicpages.github.io) 
 
 Original instructions can be found here (among other places:
-https://mobb.github.io/academicpages-test/
+https://academicpages.github.io/
 
-It might be a little heavy for what a project needs. but features I like:
-1. files lives in the docs dir of a git project, so website-files don't swamp the other project material.
+
+This might be a little heavy for what we want:
+1. files that live in the docs dir of a git project, so website-files don't swamp the other project material.
 1. pages are composed in markdown, then converted to html by git
 1. site has navigation along the top, which can be customized.
 1. since it's git, there can be multiple contributors, but still managed by EDI group.
@@ -26,9 +27,13 @@ It might be a little heavy for what a project needs. but features I like:
 Other stuff that might be useful:
 1. some pages' metadata can be used to generate indexes. eg, a 'list of talks' on the Talks page (https://mobb.github.io/academicpages-test/talks/).
 
+But when I try to install these files under docs, the config is wrong. see: http://mobb.github.io/litterbox/
+1. it's insecure (https warnings)
+1. can't find this about.md! it defaults to the old one. not sure why.
+
 
 What I don't know yet:
-1. what will break since it's no longer at the repo root. note that funny ", , 1900". that was not in the original fork of adacemicpages. it might be a default date.
+1. how stuff breaks, since it's no longer at the repo root. note that funny ", , 1900". that was not in the original fork of adacemicpages. it might be a default date.
 1. presuming I didn't break the whole thing, how much can I drop and still have a functional website?
 1. this template has a dir for /files/. do we need that? or is it better to put static files (eg, pdfs) in the main code <> area?
 1. how to tag. It would be great if some one could search acoss all EDI repos, eg, for a content type, like "best practices" or "how-to", or for a subject, like "units" or 
